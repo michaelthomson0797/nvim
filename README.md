@@ -1,4 +1,7 @@
 # My Neovim Config
+<a href="https://dotfyle.com/michaelthomson0797/nvim"><img src="https://dotfyle.com/michaelthomson0797/nvim/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/michaelthomson0797/nvim"><img src="https://dotfyle.com/michaelthomson0797/nvim/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/michaelthomson0797/nvim"><img src="https://dotfyle.com/michaelthomson0797/nvim/badges/plugin-manager?style=flat" /></a>
 
 <!--toc:start-->
 - [My Neovim Config](#my-neovim-config)
