@@ -8,7 +8,6 @@ return {
     "MunifTanjim/nui.nvim",
   },
   keys = {
-    { "<leader>fe", '<Cmd>Neotree reveal<CR>' },
-    { "<leader>gs", '<Cmd>Neotree git_status<CR>' },
+    { "<leader>fe", '<Cmd>Neotree<CR>' },
   },
 }
