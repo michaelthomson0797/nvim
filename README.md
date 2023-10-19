@@ -1,5 +1,17 @@
 # My Neovim Config
-A fairly simple config
+
+<!--toc:start-->
+- [My Neovim Config](#my-neovim-config)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Plugins used](#plugins-used)
+  - [Basic Keybinds](#basic-keybinds)
+    - [Project Navigation](#project-navigation)
+    - [File Navigation](#file-navigation)
+    - [LSP Commands](#lsp-commands)
+<!--toc:end-->
+
+An okay config
 
 ## Prerequisites
 - `neovim`
