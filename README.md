@@ -3,6 +3,8 @@
 <a href="https://dotfyle.com/michaelthomson0797/nvim"><img src="https://dotfyle.com/michaelthomson0797/nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/michaelthomson0797/nvim"><img src="https://dotfyle.com/michaelthomson0797/nvim/badges/plugin-manager?style=flat" /></a>
 
+![Screenshot 2023-10-19 at 2 16 29 PM](https://github.com/michaelthomson0797/nvim/assets/8810940/170440a7-aadb-4e88-b45e-02e7737a3d28)
+
 <!--toc:start-->
 - [My Neovim Config](#my-neovim-config)
   - [Prerequisites](#prerequisites)
