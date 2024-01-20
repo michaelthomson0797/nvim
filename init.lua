@@ -25,6 +25,8 @@ g.maplocalleader = " "
 -- Load plugins
 require('lazy').setup('plugins')
 
+vim.cmd 'colorscheme catppuccin'
+
 -- Load core settings
 opt.termguicolors = true -- Enable colors in terminal
 opt.hlsearch = false -- turn off highlight on search

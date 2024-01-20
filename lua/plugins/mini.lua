@@ -26,8 +26,5 @@ return {
 
     -- Split or join lists
     require('mini.splitjoin').setup()
-
-    -- Extended f, F, t, T functionality
-    require('mini.jump').setup()
   end
 }

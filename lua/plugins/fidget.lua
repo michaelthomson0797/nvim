@@ -1,5 +1,10 @@
 return {
   'j-hui/fidget.nvim',
-  event = "LspAttach",
-  tag = 'legacy',
+  opts = {
+    notification = {
+      window = {
+        winblend = 0,
+      },
+    }
+  }
 }
