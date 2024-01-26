@@ -52,6 +52,8 @@ return {
       }
     })
 
+    vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
+
     -- cmp Config
 
     local cmp = require('cmp')
@@ -65,6 +67,7 @@ return {
         {name = 'luasnip'},
         {name = 'cmp_luasnip'},
         {name = 'buffer'},
+        {name = 'copilot'}
       },
       window = {
         completion = cmp.config.window.bordered(),
@@ -76,6 +79,7 @@ return {
           mode = 'symbol', -- show only symbol annotations
           maxwidth = 50, -- prevent the popup from showing more than provided characters
           ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead
+          symbol_map = { Copilot = "" },
         })
       },
       mapping = cmp.mapping.preset.insert({
