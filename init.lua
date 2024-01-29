@@ -43,6 +43,7 @@ opt.signcolumn = "yes" -- Always show sign column
 opt.clipboard = "unnamedplus" -- Access system clipboard
 opt.laststatus = 3 -- Global status line
 opt.swapfile = false
+opt.wrap = false
 
 -- Time in milliseconds to wait for a mapped sequence to complete.
 opt.timeoutlen = 300
@@ -59,9 +60,9 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.splitbelow = true
 opt.splitright = true
-opt.laststatus = 3 -- Global statusline
+opt.laststatus = 0 -- Global statusline
 opt.cursorline = true
-opt.guifont = "Fira Code"
+opt.guifont = "PragmataPro Mono Liga"
 
 -- Remappings
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -78,3 +79,10 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "Q", "<nop>")
+
+vim.cmd[[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+augroup END
+]]
