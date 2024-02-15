@@ -7,9 +7,6 @@ return {
     {'williamboman/mason.nvim'},           -- Optional
     {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-    -- Rust
-    {'mrcjkb/rustaceanvim'},
-
     -- Autocompletion
     {'hrsh7th/nvim-cmp'},     -- Required
     {'hrsh7th/cmp-nvim-lsp'}, -- Required
@@ -35,24 +32,14 @@ return {
       vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
     end)
 
-    -- Rust
-    vim.g.rustaceanvim = {
-      server = {
-        capabilities = lsp_zero.get_capabilities()
-      }
-    }
-
     -- Mason Config
     require('mason').setup({})
     require('mason-lspconfig').setup({
       ensure_installed = {},
       handlers = {
         lsp_zero.default_setup,
-        rust_analyzer = lsp_zero.noop,
       }
     })
-
-    vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
 
     -- cmp Config
 
@@ -67,7 +54,6 @@ return {
         {name = 'luasnip'},
         {name = 'cmp_luasnip'},
         {name = 'buffer'},
-        {name = 'copilot'},
         {name = 'neorg'}
       },
       window = {
@@ -80,7 +66,6 @@ return {
           mode = 'symbol', -- show only symbol annotations
           maxwidth = 50, -- prevent the popup from showing more than provided characters
           ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead
-          symbol_map = { Copilot = "" },
         })
       },
       mapping = cmp.mapping.preset.insert({

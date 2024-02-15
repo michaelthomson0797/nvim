@@ -25,7 +25,7 @@ g.maplocalleader = " "
 -- Load plugins
 require('lazy').setup('plugins')
 
-vim.cmd 'colorscheme catppuccin'
+vim.cmd 'colorscheme catppuccin-frappe'
 
 -- Load core settings
 opt.termguicolors = true -- Enable colors in terminal
@@ -49,7 +49,7 @@ opt.wrap = false
 opt.timeoutlen = 300
 
 opt.showmode = false -- Do not need to show the mode. We use the statusline instead.
-opt.scrolloff = 8 -- Lines of context
+-- opt.scrolloff = 8 -- Lines of context
 opt.smartindent = true --Smart indent
 opt.expandtab = true
 opt.smarttab = true
@@ -60,7 +60,6 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.splitbelow = true
 opt.splitright = true
-opt.laststatus = 0 -- Global statusline
 opt.cursorline = true
 opt.guifont = "PragmataPro Mono Liga"
 
@@ -79,6 +78,13 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "<c-f>", "<nop>")
+
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+vim.keymap.set("n", "J", "mzJ`z")
+
+vim.keymap.set("n", "<leader>fe", "<cmd>Explore<CR>")
 
 vim.cmd[[
 augroup highlight_yank

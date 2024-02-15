@@ -7,7 +7,6 @@ return {
       cmp = true,
       gitsigns = true,
       treesitter = true,
-      alpha = true,
       fidget = true,
       harpoon = true,
       leap = true,
