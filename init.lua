@@ -86,6 +86,8 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 vim.keymap.set("n", "<leader>fe", "<cmd>Explore<CR>")
 
+vim.keymap.set("i", "jk", "<Esc>")
+
 vim.cmd[[
 augroup highlight_yank
 autocmd!

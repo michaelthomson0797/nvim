@@ -18,6 +18,16 @@ return {
         -- auto close tags in html/jsx/tsx
         autotag = { enable = true },
 
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = '<CR>',
+            scope_incremental = '<CR>',
+            node_incremental = '<TAB>',
+            node_decremental = '<S-TAB>',
+          },
+        },
+
         -- text object selection
         textobjects = {
           select = {
